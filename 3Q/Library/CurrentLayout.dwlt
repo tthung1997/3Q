@@ -366,23 +366,23 @@ MonoBehaviour:
     height: 383
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa330000
-    m_LastClickedID: 13226
-    m_ExpandedIDs: 7211ffff021affff3cf1ffffaefaffffccfaffffe4faffffe0fbffff0000000020330000aa330000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: e0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Player1 - LOW
-      m_OriginalName: Player1 - LOW
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -58878
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -502,19 +502,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Sprites/BG
   m_ViewMode: 1
   m_StartGridSize: 61
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Sprites/BG
   m_LastFoldersGridSize: 61
   m_LastProjectPath: D:\Git\repository\3Q\3Q\3Q
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: e6290000
-    m_LastClickedID: 10726
-    m_ExpandedIDs: 0000000054250000aa2500009826000054270000c6280000dc28000056290000742a0000302b0000642b0000b42c00004a2d0000822e0000362f0000ea2f0000d63f0000d83f0000da3f0000ffffff7f
+    scrollPos: {x: 0, y: 471}
+    m_SelectedIDs: 7c290000
+    m_LastClickedID: 10620
+    m_ExpandedIDs: 000000007a250000d0250000be2600007a270000ee280000042900007e2900009c2a0000582b00008c2b0000dc2c0000722d0000aa2e00005e2f000014300000984000009a4000009c400000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -542,7 +542,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000054250000aa2500009826000054270000c6280000dc28000056290000742a0000302b0000642b0000b42c00004a2d0000822e0000362f0000ea2f0000d63f0000d83f0000da3f0000
+    m_ExpandedIDs: 000000007a250000d0250000be2600007a270000ee280000042900007e2900009c2a0000582b00008c2b0000dc2c0000722d0000aa2e00005e2f000014300000984000009a4000009c400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 42250000be2500003c260000e42500009c26000008260000ec2500006e27000056260000682700001426000000000000d6250000ac2e0000c68f0000102a0000fa470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
