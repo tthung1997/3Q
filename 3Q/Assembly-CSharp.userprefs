@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SO Asset Scripts\WeaponCardAsset\WeaponCardAsset.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Visual\OneCardManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\BasicCardAsset\BasicCardAsset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\BasicCardAsset\Editor\BasicCardUnityIntegration.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\ScrollCardAsset\ScrollCardAsset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\OneScrollCardManager.cs" Line="61" Column="33" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\WeaponCardAsset\WeaponCardAsset.cs" Line="9" Column="18" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\WeaponCardAsset\Editor\WeaponCardUnityIntegration.cs" Line="9" Column="59" />
+      <File FileName="Assets\Scripts\Visual\OneWeaponCardManager.cs" Line="79" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
