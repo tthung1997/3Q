@@ -1,12 +1,19 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Visual\OneCardManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Logic\Character.cs">
     <Files>
-      <File FileName="Assets\Scripts\SO Asset Scripts\CardAsset\CardAsset.cs" Line="20" Column="42" />
-      <File FileName="Assets\Scripts\Visual\OneCardManager.cs" Line="79" Column="16" />
-      <File FileName="Assets\Scripts\Visual\PlayerArea.cs" Line="11" Column="7" />
-      <File FileName="Assets\Scripts\Commands\UpdateManaCrystalsCommand.cs" Line="19" Column="12" />
-      <File FileName="Assets\Scripts\Logic\Player.cs" Line="85" Column="21" />
+      <File FileName="Assets\Scripts\Visual\PlayerArea.cs" Line="12" Column="34" />
+      <File FileName="Assets\Scripts\Visual\HandVisual.cs" Line="103" Column="40" />
+      <File FileName="Assets\Scripts\Visual\PlayerDeckVisual.cs" Line="14" Column="16" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\BasicCardAsset\BasicCardAsset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\EquipmentCardAsset\EquipmentCardAsset.cs" Line="5" Column="51" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\ScrollCardAsset\ScrollCardAsset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\GlobalSettings.cs" Line="60" Column="15" />
+      <File FileName="Assets\Scripts\Logic\Deck.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\IDHolder.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\MovesHighlighter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\RopeTimer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Logic\Character.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
