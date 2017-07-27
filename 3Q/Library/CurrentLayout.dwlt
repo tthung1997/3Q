@@ -109,7 +109,15 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+  controlID: 752
+=======
+  controlID: 2403
+>>>>>>> 36793191478e499f5bca716adc27c5457588bde2
+=======
   controlID: 9
+>>>>>>> master
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +141,15 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
+<<<<<<< HEAD
+  controlID: 753
+=======
+  controlID: 2404
+>>>>>>> 36793191478e499f5bca716adc27c5457588bde2
+=======
   controlID: 10
+>>>>>>> master
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +173,15 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+  controlID: 754
+=======
+  controlID: 2405
+>>>>>>> 36793191478e499f5bca716adc27c5457588bde2
+=======
   controlID: 11
+>>>>>>> master
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -366,9 +390,21 @@ MonoBehaviour:
     height: 383
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_SelectedIDs: 3cb8ffff
+    m_LastClickedID: -18372
+    m_ExpandedIDs: aad6ffff00000000023d0000
+=======
+    m_SelectedIDs: f411ffff
+    m_LastClickedID: -60940
+    m_ExpandedIDs: aad6ffff00000000163d0000
+>>>>>>> 36793191478e499f5bca716adc27c5457588bde2
+=======
     m_SelectedIDs: aa330000
     m_LastClickedID: 13226
     m_ExpandedIDs: 7211ffff021affff3cf1ffffaefaffffccfaffffe4faffffe0fbffff0000000020330000aa330000
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Player1 - LOW
@@ -511,10 +547,23 @@ MonoBehaviour:
   m_LastProjectPath: D:\Git\repository\3Q\3Q\3Q
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
+    scrollPos: {x: 0, y: 439}
+    m_SelectedIDs: 24330000
+    m_LastClickedID: 13092
+    m_ExpandedIDs: 00000000442f0000962f000080300000323100009a320000b0320000263300003c340000f63400002a35000076360000083700003a380000e838000098390000d4490000d6490000d8490000ffffff7f
+=======
     scrollPos: {x: 0, y: 31}
+<<<<<<< HEAD
+    m_SelectedIDs: ac330000
+    m_LastClickedID: 13228
+    m_ExpandedIDs: 000000003e2f0000902f00007a3000002c31000094320000aa3200002033000036340000f034000024350000703600000237000034380000e238000092390000d0490000d2490000d4490000ffffff7f
+>>>>>>> 36793191478e499f5bca716adc27c5457588bde2
+=======
     m_SelectedIDs: e6290000
     m_LastClickedID: 10726
     m_ExpandedIDs: 0000000054250000aa2500009826000054270000c6280000dc28000056290000742a0000302b0000642b0000b42c00004a2d0000822e0000362f0000ea2f0000d63f0000d83f0000da3f0000ffffff7f
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -542,7 +591,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_ExpandedIDs: 00000000442f0000962f000080300000323100009a320000b0320000263300003c340000f63400002a35000076360000083700003a380000e838000098390000d4490000d6490000d8490000ffffff7f
+=======
+    m_ExpandedIDs: 000000003e2f0000902f00007a3000002c31000094320000aa3200002033000036340000f034000024350000703600000237000034380000e238000092390000d0490000d2490000d4490000ffffff7f
+>>>>>>> 36793191478e499f5bca716adc27c5457588bde2
+=======
     m_ExpandedIDs: 0000000054250000aa2500009826000054270000c6280000dc28000056290000742a0000302b0000642b0000b42c00004a2d0000822e0000362f0000ea2f0000d63f0000d83f0000da3f0000
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
