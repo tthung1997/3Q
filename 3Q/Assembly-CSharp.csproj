@@ -85,11 +85,8 @@
      <Compile Include="Assets\Scripts\Visual\BetterCardRotation.cs" />
      <Compile Include="Assets\Scripts\Visual\DamageEffect.cs" />
      <Compile Include="Assets\Scripts\Visual\DescriptionListVisual.cs" />
-<<<<<<< HEAD
-=======
      <Compile Include="Assets\Scripts\Visual\GlobalSettings.cs" />
      <Compile Include="Assets\Scripts\Visual\HandVisual.cs" />
->>>>>>> 36793191478e499f5bca716adc27c5457588bde2
      <Compile Include="Assets\Scripts\Visual\HealthVisual.cs" />
      <Compile Include="Assets\Scripts\Visual\HoverPreview.cs" />
      <Compile Include="Assets\Scripts\Visual\IDFactory.cs" />
@@ -99,15 +96,9 @@
      <Compile Include="Assets\Scripts\Visual\OneCreatureManager.cs" />
      <Compile Include="Assets\Scripts\Visual\OneEquipmentCardManager.cs" />
      <Compile Include="Assets\Scripts\Visual\OneScrollCardManager.cs" />
-<<<<<<< HEAD
-=======
      <Compile Include="Assets\Scripts\Visual\PlayerArea.cs" />
      <Compile Include="Assets\Scripts\Visual\PlayerDeckVisual.cs" />
-<<<<<<< HEAD
->>>>>>> 36793191478e499f5bca716adc27c5457588bde2
-=======
      <Compile Include="Assets\Scripts\Visual\PlayerPortraitVisual.cs" />
->>>>>>> master
      <Compile Include="Assets\Scripts\Visual\RopeVisual.cs" />
      <Compile Include="Assets\Scripts\Visual\SameDistanceChildren.cs" />
      <Compile Include="Assets\Scripts\Visual\TableVisual.cs" />
