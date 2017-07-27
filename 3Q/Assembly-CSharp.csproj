@@ -47,12 +47,27 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BattleStartInfo.cs" />
+     <Compile Include="Assets\Scripts\Commands\Command.cs" />
+     <Compile Include="Assets\Scripts\Commands\DealDamageCommand.cs" />
+     <Compile Include="Assets\Scripts\Commands\DelayCommand.cs" />
+     <Compile Include="Assets\Scripts\Commands\DrawACardCommand.cs" />
+     <Compile Include="Assets\Scripts\Commands\GameOverCommand.cs" />
+     <Compile Include="Assets\Scripts\Commands\PlayASpellCardCommand.cs" />
+     <Compile Include="Assets\Scripts\Commands\ShowMessageCommand.cs" />
+     <Compile Include="Assets\Scripts\Commands\StartATurnCommand.cs" />
      <Compile Include="Assets\Scripts\Logic\Buffs\Buff.cs" />
+     <Compile Include="Assets\Scripts\Logic\CardLogic.cs" />
      <Compile Include="Assets\Scripts\Logic\Character.cs" />
      <Compile Include="Assets\Scripts\Logic\Deck.cs" />
+     <Compile Include="Assets\Scripts\Logic\Hand.cs" />
      <Compile Include="Assets\Scripts\Logic\IDHolder.cs" />
      <Compile Include="Assets\Scripts\Logic\MovesHighlighter.cs" />
+     <Compile Include="Assets\Scripts\Logic\Player.cs" />
      <Compile Include="Assets\Scripts\Logic\RopeTimer.cs" />
+     <Compile Include="Assets\Scripts\Logic\Table.cs" />
+     <Compile Include="Assets\Scripts\Logic\TurnManager.cs" />
+     <Compile Include="Assets\Scripts\Logic\TurnsAndAI\PlayerTurnMaker.cs" />
+     <Compile Include="Assets\Scripts\Logic\TurnsAndAI\TurnMaker.cs" />
      <Compile Include="Assets\Scripts\RaycastExample.cs" />
      <Compile Include="Assets\Scripts\SO Asset Scripts\BasicCardAsset\BasicCardAsset.cs" />
      <Compile Include="Assets\Scripts\SO Asset Scripts\CharacterAsset\CharacterAsset.cs" />
@@ -68,6 +83,7 @@
      <Compile Include="Assets\Scripts\UI\Outlines by N Yoda\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\UI\Outlines by N Yoda\Outline8.cs" />
      <Compile Include="Assets\Scripts\Visual\BetterCardRotation.cs" />
+     <Compile Include="Assets\Scripts\Visual\DamageEffect.cs" />
      <Compile Include="Assets\Scripts\Visual\DescriptionListVisual.cs" />
 <<<<<<< HEAD
 =======
@@ -77,6 +93,7 @@
      <Compile Include="Assets\Scripts\Visual\HealthVisual.cs" />
      <Compile Include="Assets\Scripts\Visual\HoverPreview.cs" />
      <Compile Include="Assets\Scripts\Visual\IDFactory.cs" />
+     <Compile Include="Assets\Scripts\Visual\MessageManager.cs" />
      <Compile Include="Assets\Scripts\Visual\OneBasicCardManager.cs" />
      <Compile Include="Assets\Scripts\Visual\OneCardManager.cs" />
      <Compile Include="Assets\Scripts\Visual\OneCreatureManager.cs" />
@@ -86,9 +103,14 @@
 =======
      <Compile Include="Assets\Scripts\Visual\PlayerArea.cs" />
      <Compile Include="Assets\Scripts\Visual\PlayerDeckVisual.cs" />
+<<<<<<< HEAD
 >>>>>>> 36793191478e499f5bca716adc27c5457588bde2
+=======
+     <Compile Include="Assets\Scripts\Visual\PlayerPortraitVisual.cs" />
+>>>>>>> master
      <Compile Include="Assets\Scripts\Visual\RopeVisual.cs" />
      <Compile Include="Assets\Scripts\Visual\SameDistanceChildren.cs" />
+     <Compile Include="Assets\Scripts\Visual\TableVisual.cs" />
      <Compile Include="Assets\Scripts\Visual\WhereIsTheCardOrCreature.cs" />
      <None Include="Assets\DOTween\readme.txt" />
      <None Include="Assets\DOTween\DOTween50.xml" />
