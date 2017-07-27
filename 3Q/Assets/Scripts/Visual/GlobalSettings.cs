@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class GlobalSettings: MonoBehaviour 
 {
     [Header("Players")]
-    //TODO public Player TopPlayer;
-    //TODO public Player LowPlayer;
+    public Player TopPlayer;
+    public Player LowPlayer;
     [Header("Colors")]
     public Color32 CardBodyStandardColor;
     public Color32 CardRibbonsStandardColor;
@@ -22,9 +22,9 @@ public class GlobalSettings: MonoBehaviour
     //public GameObject TargetedSpellCardPrefab;
     //public GameObject CreatureCardPrefab;
     //public GameObject CreaturePrefab;
-    //public GameObject DamageEffectPrefab;
+    public GameObject DamageEffectPrefab;
 	//public GameObject HealEffectPrefab;
-    //public GameObject ExplosionPrefab;
+    public GameObject ExplosionPrefab;
 	public GameObject BasicCardPrefab;
 	public GameObject ScrollCardPrefab;
 	public GameObject ArmorCardPrefab;
@@ -37,7 +37,7 @@ public class GlobalSettings: MonoBehaviour
     public GameObject GameOverPanel;
     //public Sprite HeroPowerCrossMark;
 
-    //TODO public Dictionary<AreaPosition, Player> Players = new Dictionary<AreaPosition, Player>();
+    public Dictionary<AreaPosition, Player> Players = new Dictionary<AreaPosition, Player>();
 
 
     // SINGLETON
@@ -45,22 +45,22 @@ public class GlobalSettings: MonoBehaviour
 
     void Awake()
     {
-        //TODO Players.Add(AreaPosition.Top, TopPlayer);
-        //TODO Players.Add(AreaPosition.Low, LowPlayer);
+        Players.Add(AreaPosition.Top, TopPlayer);
+        Players.Add(AreaPosition.Low, LowPlayer);
         Instance = this;
     }
 
     public bool CanControlThisPlayer(AreaPosition owner)
     {
-		/* TODO
+
         bool PlayersTurn = (TurnManager.Instance.whoseTurn == Players[owner]);
         bool NotDrawingAnyCards = !Command.CardDrawPending();
         return Players[owner].PArea.AllowedToControlThisPlayer && Players[owner].PArea.ControlsON && PlayersTurn && NotDrawingAnyCards;
-       	*/
+       
 		// test only
-		return true;
+		//return true;
     }
-	/*TODO 
+
     public bool CanControlThisPlayer(Player ownerPlayer)
     {
 		
@@ -71,7 +71,7 @@ public class GlobalSettings: MonoBehaviour
 
     public void EnableEndTurnButtonOnStart(Player P)
     {
-		/* TODO
+		
         if (P == LowPlayer && CanControlThisPlayer(AreaPosition.Low) ||
             P == TopPlayer && CanControlThisPlayer(AreaPosition.Top))
             EndTurnButton.interactable = true;
@@ -79,5 +79,4 @@ public class GlobalSettings: MonoBehaviour
             EndTurnButton.interactable = false;
          
     }
-    */
 }
