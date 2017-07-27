@@ -46,15 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\SO Asset Scripts\CardAsset\Editor\CardUnityIntegration.cs" />
+     <Compile Include="Assets\Scripts\SO Asset Scripts\BasicCardAsset\Editor\BasicCardUnityIntegration.cs" />
      <Compile Include="Assets\Scripts\SO Asset Scripts\CharacterAsset\Editor\CharacterUnityIntegration.cs" />
+     <Compile Include="Assets\Scripts\SO Asset Scripts\CountryAsset\Editor\CountryUnityIntegration.cs" />
      <Compile Include="Assets\Scripts\SO Asset Scripts\Editor\ScriptableObjectUtility2.cs" />
+     <Compile Include="Assets\Scripts\SO Asset Scripts\EquipmentCardAsset\Editor\EquipmentCardUnityIntegration.cs" />
+     <Compile Include="Assets\Scripts\SO Asset Scripts\HeroAsset\Editor\HeroUnityIntegration.cs" />
+     <Compile Include="Assets\Scripts\SO Asset Scripts\ScrollCardAsset\Editor\ScrollCardUnityIntegration.cs" />
      <None Include="Assets\DOTween\readme.txt" />
      <None Include="Assets\DOTween\DOTween50.xml" />
      <None Include="Assets\DOTween\DOTween46.xml" />
      <None Include="Assets\DOTween\DOTween43.xml" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/Unity/workspace/3Q/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>D:/Git/repository/3Q/3Q/3Q/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -111,19 +115,19 @@
  <HintPath>D:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>D:/Unity/workspace/3Q/Assets/DOTween/DOTween.dll</HintPath>
+ <HintPath>D:/Git/repository/3Q/3Q/3Q/Assets/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="DOTween43">
- <HintPath>D:/Unity/workspace/3Q/Assets/DOTween/DOTween43.dll</HintPath>
+ <HintPath>D:/Git/repository/3Q/3Q/3Q/Assets/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="DOTween46">
- <HintPath>D:/Unity/workspace/3Q/Assets/DOTween/DOTween46.dll</HintPath>
+ <HintPath>D:/Git/repository/3Q/3Q/3Q/Assets/DOTween/DOTween46.dll</HintPath>
  </Reference>
  <Reference Include="DOTween50">
- <HintPath>D:/Unity/workspace/3Q/Assets/DOTween/DOTween50.dll</HintPath>
+ <HintPath>D:/Git/repository/3Q/3Q/3Q/Assets/DOTween/DOTween50.dll</HintPath>
  </Reference>
  <Reference Include="DOTweenEditor">
- <HintPath>D:/Unity/workspace/3Q/Assets/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ <HintPath>D:/Git/repository/3Q/3Q/3Q/Assets/DOTween/Editor/DOTweenEditor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
