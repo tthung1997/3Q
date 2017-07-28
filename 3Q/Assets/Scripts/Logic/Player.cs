@@ -226,8 +226,8 @@ public class Player : MonoBehaviour, ICharacter
     // 2 METHODS FOR PLAYING SPELLS
     // 1st overload - takes ids as arguments
     // it is cnvenient to call this method from visual part
-    /*TODO public void PlayASpellFromHand(int SpellCardUniqueID, int TargetUniqueID)
-    {
+    public void PlayASpellFromHand(int SpellCardUniqueID, int TargetUniqueID)
+    { /* TODO
         if (TargetUniqueID < 0)
             PlayASpellFromHand(CardLogic.CardsCreatedThisGame[SpellCardUniqueID], null);
         else if (TargetUniqueID == ID)
@@ -243,8 +243,8 @@ public class Player : MonoBehaviour, ICharacter
             // target is a creature
             PlayASpellFromHand(CardLogic.CardsCreatedThisGame[SpellCardUniqueID], CreatureLogic.CreaturesCreatedThisGame[TargetUniqueID]);
         }
-          
-    }*/
+          */
+    }
 
     // 2nd overload - takes CardLogic and ICharacter interface - 
     // this method is called from Logic, for example by AI
