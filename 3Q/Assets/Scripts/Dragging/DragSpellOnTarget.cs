@@ -4,7 +4,7 @@ using DG.Tweening;
 
 public class DragSpellOnTarget : DraggingActions {
 
-    public TargetingOptions Targets = TargetingOptions.AllCharacters;
+	public TargetingOptions Targets = TargetingOptions.EnemyCards;
     private SpriteRenderer sr;
     private LineRenderer lr;
     private WhereIsTheCardOrCreature whereIsThisCard;
@@ -110,6 +110,7 @@ public class DragSpellOnTarget : DraggingActions {
 
             // check of we should play this spell depending on targeting options
             int targetID = Target.GetComponent<IDHolder>().UniqueID;
+			/* TODO
             switch (Targets)
             {
                 case TargetingOptions.AllCharacters: 
@@ -175,6 +176,7 @@ public class DragSpellOnTarget : DraggingActions {
                     Debug.LogWarning("Reached default case in DragSpellOnTarget! Suspicious behaviour!!");
                     break;
             }
+            */
         }
 
         if (!targetValid)

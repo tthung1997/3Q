@@ -1,10 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Dragging\Draggable.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Visual\BetterCardRotation.cs">
     <Files>
-      <File FileName="Assets\Scripts\Dragging\Draggable.cs" Line="37" Column="39" />
-      <File FileName="Assets\Scripts\Dragging\DraggingActions.cs" Line="16" Column="53" />
-      <File FileName="Assets\Scripts\Visual\GlobalSettings.cs" Line="68" Column="130" />
+      <File FileName="Assets\Scripts\Dragging\DragSpellNoTarget.cs" Line="48" Column="13" />
+      <File FileName="Assets\Scripts\Dragging\DragSpellOnTarget.cs" Line="179" Column="15" />
+      <File FileName="Assets\Scripts\Logic\Player.cs" Line="246" Column="13" />
+      <File FileName="Assets\Scripts\Visual\PlayerPortraitVisual.cs" Line="20" Column="43" />
+      <File FileName="Assets\Scripts\Visual\OneCardManager.cs" Line="47" Column="37" />
+      <File FileName="Assets\Scripts\Visual\HeroPortraitVisual.cs" Line="29" Column="3" />
+      <File FileName="Assets\Scripts\SO Asset Scripts\HeroAsset\HeroAsset.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\BetterCardRotation.cs" Line="16" Column="2" />
+      <File FileName="Assets\Scripts\Visual\HandVisual.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Commands\DrawACardCommand.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\WhereIsTheCardOrCreature.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

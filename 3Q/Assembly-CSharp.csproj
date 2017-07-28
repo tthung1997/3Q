@@ -97,6 +97,7 @@
      <Compile Include="Assets\Scripts\Visual\GlobalSettings.cs" />
      <Compile Include="Assets\Scripts\Visual\HandVisual.cs" />
      <Compile Include="Assets\Scripts\Visual\HealthVisual.cs" />
+     <Compile Include="Assets\Scripts\Visual\HeroPortraitVisual.cs" />
      <Compile Include="Assets\Scripts\Visual\HoverPreview.cs" />
      <Compile Include="Assets\Scripts\Visual\IDFactory.cs" />
      <Compile Include="Assets\Scripts\Visual\MessageManager.cs" />
