@@ -55,6 +55,15 @@
      <Compile Include="Assets\Scripts\Commands\PlayASpellCardCommand.cs" />
      <Compile Include="Assets\Scripts\Commands\ShowMessageCommand.cs" />
      <Compile Include="Assets\Scripts\Commands\StartATurnCommand.cs" />
+     <Compile Include="Assets\Scripts\Dragging\DragSpellNoTarget.cs" />
+     <Compile Include="Assets\Scripts\Dragging\DragSpellOnTarget.cs" />
+     <Compile Include="Assets\Scripts\Dragging\Draggable.cs" />
+     <Compile Include="Assets\Scripts\Dragging\DraggingActions.cs" />
+     <Compile Include="Assets\Scripts\Dragging\DraggingTest\DragOnTargetTest.cs" />
+     <Compile Include="Assets\Scripts\Dragging\DraggingTest\DraggableTest.cs" />
+     <Compile Include="Assets\Scripts\Dragging\DraggingTest\DraggableTestWithActions.cs" />
+     <Compile Include="Assets\Scripts\Dragging\DraggingTest\DraggingActionsTest.cs" />
+     <Compile Include="Assets\Scripts\Dragging\DraggingTest\DraggingActionsTestReturn.cs" />
      <Compile Include="Assets\Scripts\Logic\Buffs\Buff.cs" />
      <Compile Include="Assets\Scripts\Logic\CardLogic.cs" />
      <Compile Include="Assets\Scripts\Logic\Character.cs" />

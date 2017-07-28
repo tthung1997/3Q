@@ -62,9 +62,8 @@ public class GlobalSettings: MonoBehaviour
     }
 
     public bool CanControlThisPlayer(Player ownerPlayer)
-    {
-		
-        bool PlayersTurn = (TurnManager.Instance.whoseTurn == ownerPlayer);
+    {	
+		bool PlayersTurn = (TurnManager.Instance.whoseTurn == ownerPlayer);
         bool NotDrawingAnyCards = !Command.CardDrawPending();
         return ownerPlayer.PArea.AllowedToControlThisPlayer && ownerPlayer.PArea.ControlsON && PlayersTurn && NotDrawingAnyCards;
     }

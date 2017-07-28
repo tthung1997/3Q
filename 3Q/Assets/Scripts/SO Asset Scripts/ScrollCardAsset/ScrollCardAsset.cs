@@ -8,4 +8,5 @@ public class ScrollCardAsset : ScriptableObject
 	[TextArea(2, 3)]
 	public string Effect;
 	public Sprite[] CardSuits;
+	public TargetingOptions Targets;
 }
