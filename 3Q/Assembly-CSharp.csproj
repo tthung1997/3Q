@@ -93,6 +93,7 @@
      <Compile Include="Assets\Scripts\UI\Outlines by N Yoda\Outline8.cs" />
      <Compile Include="Assets\Scripts\Visual\BetterCardRotation.cs" />
      <Compile Include="Assets\Scripts\Visual\DamageEffect.cs" />
+     <Compile Include="Assets\Scripts\Visual\DamageEffectTest.cs" />
      <Compile Include="Assets\Scripts\Visual\DescriptionListVisual.cs" />
      <Compile Include="Assets\Scripts\Visual\GlobalSettings.cs" />
      <Compile Include="Assets\Scripts\Visual\HandVisual.cs" />

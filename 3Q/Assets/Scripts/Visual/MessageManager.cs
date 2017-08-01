@@ -15,12 +15,12 @@ public class MessageManager : MonoBehaviour
         MessagePanel.SetActive(false);
     }
 
-    public void ShowMessage(string Message, float Duration, Command com)
+	public void ShowMessage(string Message, float Duration, Command com)
     {
         StartCoroutine(ShowMessageCoroutine(Message, Duration, com));
     }
 
-    IEnumerator ShowMessageCoroutine(string Message, float Duration, Command com)
+	IEnumerator ShowMessageCoroutine(string Message, float Duration, Command com)
     {
         //Debug.Log("Showing some message. Duration: " + Duration);
         MessageText.text = Message;
@@ -31,4 +31,13 @@ public class MessageManager : MonoBehaviour
         MessagePanel.SetActive(false);
         Command.CommandExecutionComplete();
     }
+	/* TEST ONLY 
+	void Update() {
+		if (Input.GetKeyDown (KeyCode.Y)) 
+			ShowMessage ("Your Turn", 3f);
+		
+		if (Input.GetKeyDown (KeyCode.E)) 
+			ShowMessage ("Enemy Turn", 3f);
+	}
+	*/
 }
