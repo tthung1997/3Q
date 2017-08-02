@@ -26,7 +26,8 @@ public class HeroPortraitVisual : MonoBehaviour {
 
 	public void ApplyLookFromAsset()
 	{
-		HealthText.text = heroAsset.MaxHealth.ToString();
+		if (HealthText != null)
+			HealthText.text = heroAsset.MaxHealth.ToString();
 		PortraitImage.sprite = heroAsset.CardImage;
 		PreviewManager.heroAsset = heroAsset;
 		PreviewManager.ReadCardFromAsset ();
