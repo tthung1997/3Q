@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Visual\MessageManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Visual\HandVisual.cs">
     <Files>
-      <File FileName="Assets\Scripts\Visual\DamageEffect.cs" Line="58" Column="9" />
-      <File FileName="Assets\Scripts\Visual\DamageEffectTest.cs" Line="16" Column="41" />
-      <File FileName="Assets\Scripts\Visual\MessageManager.cs" Line="42" Column="4" />
-      <File FileName="Assets\Scripts\Commands\ShowMessageCommand.cs" Line="18" Column="9" />
+      <File FileName="Assets\Scripts\Visual\HeroPortraitVisual.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Visual\BetterCardRotation.cs" Line="19" Column="2" />
+      <File FileName="Assets\Scripts\Visual\SameDistanceChildren.cs" Line="17" Column="40" />
+      <File FileName="Assets\Scripts\Visual\HandVisual.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
