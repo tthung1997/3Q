@@ -26,6 +26,8 @@ public class Player : MonoBehaviour, ICharacter
     // a static array that will store both players, should always have 2 players
     public static Player[] Players;
 
+	private usedStrikeThisTurn;
+
 	// this value used exclusively for our coin spell
 	//private int bonusManaThisTurn = 0;
 	// this value used for fatigue damage when the deck is empty
@@ -140,7 +142,7 @@ public class Player : MonoBehaviour, ICharacter
     {
         // add one mana crystal to the pool;
         Debug.Log("In ONTURNSTART for "+ gameObject.name);
-        usedHeroPowerThisTurn = false;
+        //usedHeroPowerThisTurn = false;
 		// TODO
 		/*ManaThisTurn++;
         ManaLeft = ManaThisTurn;
@@ -192,9 +194,6 @@ public class Player : MonoBehaviour, ICharacter
 				// 2) create a command
 				//new DrawACardCommand (hand.CardsInHand [0], this, fast, fromDeck: true).AddToQueue (); 
 				new DrawACardCommand (newCard, this, fast, fromDeck: true).AddToQueue (); 
-			} else {
-				deck.cards.RemoveAt (0);
-				//new BurnACardCommand (hand.CardsInHand [0], this, fast).AddToQueue ();
 			}
         }
         else
