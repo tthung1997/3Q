@@ -11,6 +11,7 @@ public class PlayerArea : MonoBehaviour
     //public ManaPoolVisual ManaBar;
     public HandVisual handVisual;
     public PlayerPortraitVisual Portrait;
+	public HeroPortraitVisual HPortrait;
     //public HeroPowerButton HeroPower;
     //public EndTurnButton EndTurnButton;
     //public TableVisual tableVisual;
