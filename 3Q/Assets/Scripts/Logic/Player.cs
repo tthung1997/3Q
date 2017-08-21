@@ -26,7 +26,7 @@ public class Player : MonoBehaviour, ICharacter
     // a static array that will store both players, should always have 2 players
     public static Player[] Players;
 
-	private usedStrikeThisTurn;
+	private int usedStrikeThisTurn;
 
 	// this value used exclusively for our coin spell
 	//private int bonusManaThisTurn = 0;
