@@ -13,20 +13,25 @@ public class CardLogic: IIdentifiable
     public GameObject VisualRepresentation;
 
     //private int baseManaCost;
-    //TODO public SpellEffect effect;
+    public SpellEffect effect;
 
     public int ID
     {
         get{ return UniqueCardID; }
     }
 
-    public int CurrentManaCost{ get; set; }
-
     public bool CanBePlayed
     {
         get
         {
 			bool ownersTurn = (TurnManager.Instance.whoseTurn == owner);
+			bool canStrike = true;
+			if (ca.GetType ().Name == "BasicCardAsset") {
+				BasicCardAsset c = (BasicCardAsset)ca;
+				if (c.CardImage.name == "sha") {
+					canStrike = !owner.usedStrikeThisTurn;
+				}
+			}
 			/* TODO
             // for spells the amount of characters on the field does not matter
             bool fieldNotFull = true;
@@ -36,7 +41,7 @@ public class CardLogic: IIdentifiable
             //Debug.Log("Card: " + ca.name + " has params: ownersTurn=" + ownersTurn + "fieldNotFull=" + fieldNotFull + " hasMana=" + (CurrentManaCost <= owner.ManaLeft));
             return ownersTurn && fieldNotFull && (CurrentManaCost <= owner.ManaLeft);
             */
-			return ownersTurn;
+			return ownersTurn && canStrike;
         }
     }
 
@@ -44,9 +49,6 @@ public class CardLogic: IIdentifiable
     {
         this.ca = ca;
         UniqueCardID = IDFactory.GetUniqueID();
-        //UniqueCardID = IDFactory.GetUniqueID();
-        //baseManaCost = ca.ManaCost;
-        //ResetManaCost();
 		/* TODO
         if (ca.SpellScriptName!= null && ca.SpellScriptName!= "")
         {
