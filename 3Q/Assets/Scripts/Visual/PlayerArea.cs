@@ -11,11 +11,17 @@ public class PlayerArea : MonoBehaviour
     //public ManaPoolVisual ManaBar;
     public HandVisual handVisual;
     public PlayerPortraitVisual Portrait;
+	public HeroPortraitVisual HPortrait;
     //public HeroPowerButton HeroPower;
     //public EndTurnButton EndTurnButton;
     //public TableVisual tableVisual;
     //public Transform PortraitPosition;
 	//public Transform InitialPortraitPosition;
+	public Transform WeaponSpot;
+	public Transform ArmorSpot;
+	public Transform OffMountSpot;
+	public Transform DefMountSpot;
+	public Transform RoleSpot;
 
     public bool AllowedToControlThisPlayer
     {

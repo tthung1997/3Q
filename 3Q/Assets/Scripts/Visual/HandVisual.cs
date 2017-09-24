@@ -13,7 +13,7 @@ public class HandVisual : MonoBehaviour
     [Header("Transform References")]
     public Transform DrawPreviewSpot;
     public Transform DeckTransform;
-    public Transform OtherCardDrawSourceTransform;
+    //public Transform OtherCardDrawSourceTransform;
     public Transform PlayPreviewSpot;
 
     // PRIVATE : a list of all card visual representations as GameObjects
@@ -157,10 +157,7 @@ public class HandVisual : MonoBehaviour
 	public void GivePlayerACard(ScriptableObject c, int UniqueID, bool fast = false, bool fromDeck = true)
     {
         GameObject card;
-        if (fromDeck)
-            card = CreateACardAtPosition(c, DeckTransform.position, new Vector3(0f, -179f, 0f));
-        else
-            card = CreateACardAtPosition(c, OtherCardDrawSourceTransform.position, new Vector3(0f, -179f, 0f));
+        card = CreateACardAtPosition(c, DeckTransform.position, new Vector3(0f, -179f, 0f));
 
         // Set a tag to reflect where this card is
         foreach (Transform t in card.GetComponentsInChildren<Transform>())
@@ -253,7 +250,7 @@ public class HandVisual : MonoBehaviour
         // set correct sorting order
         w.SetHandSortingOrder();
         // end command execution for DrawACArdCommand
-       //TODO  Command.CommandExecutionComplete();
+       Command.CommandExecutionComplete();
     }
 
    

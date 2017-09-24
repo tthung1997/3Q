@@ -9,14 +9,14 @@ public class Player : MonoBehaviour, ICharacter
     // int ID that we get from ID factory
     public int PlayerID;
     // a Character Asset that contains data about this Hero
-    public CharacterAsset charAsset;
+    public HeroAsset heroAsset;
     // a script with references to all the visual game objects for this player
     public PlayerArea PArea;
     // a script of type Spell effect that will be used for our hero power
     // (essenitially, using hero power is like playing a spell in a way)
     //public SpellEffect HeroPowerEffect;
     // a flag not to use hero power twice
-    public bool usedHeroPowerThisTurn = false;
+    // public bool usedHeroPowerThisTurn = false;
 
     // REFERENCES TO LOGICAL STUFF THAT BELONGS TO THIS PLAYER
     public Deck deck;
@@ -25,6 +25,8 @@ public class Player : MonoBehaviour, ICharacter
 
     // a static array that will store both players, should always have 2 players
     public static Player[] Players;
+
+	public bool usedStrikeThisTurn;
 
 	// this value used exclusively for our coin spell
 	//private int bonusManaThisTurn = 0;
@@ -96,8 +98,8 @@ public class Player : MonoBehaviour, ICharacter
         get { return health;}
         set
         {
-			if (value > charAsset.MaxHealth)
-				health = charAsset.MaxHealth;
+			if (value > heroAsset.MaxHealth)
+				health = heroAsset.MaxHealth;
 			else
 				health = value;
 			if (value <= 0)
@@ -140,7 +142,7 @@ public class Player : MonoBehaviour, ICharacter
     {
         // add one mana crystal to the pool;
         Debug.Log("In ONTURNSTART for "+ gameObject.name);
-        usedHeroPowerThisTurn = false;
+		usedStrikeThisTurn = false;
 		// TODO
 		/*ManaThisTurn++;
         ManaLeft = ManaThisTurn;
@@ -153,27 +155,17 @@ public class Player : MonoBehaviour, ICharacter
     {
         if(EndTurnEvent != null)
             EndTurnEvent.Invoke();
-        /*ManaThisTurn -= bonusManaThisTurn;
-        bonusManaThisTurn = 0;*/
         GetComponent<TurnMaker>().StopAllCoroutines();
     }
 
     // STUFF THAT OUR PLAYER CAN DO
 
-    // get mana from coin or other spells 
-    /*public void GetBonusMana(int amount)
-    {
-        bonusManaThisTurn += amount;
-        ManaThisTurn += amount;
-        ManaLeft += amount;
-    }*/
-
     // FOR TESTING ONLY
     void Update()
     {
 		// TEST LINE
-        //if (Input.GetKeyDown(KeyCode.D))
-        //    DrawACard();
+        if (Input.GetKeyDown(KeyCode.D))
+            DrawACard();
     }
 
     // draw a single card from the deck
@@ -192,9 +184,6 @@ public class Player : MonoBehaviour, ICharacter
 				// 2) create a command
 				//new DrawACardCommand (hand.CardsInHand [0], this, fast, fromDeck: true).AddToQueue (); 
 				new DrawACardCommand (newCard, this, fast, fromDeck: true).AddToQueue (); 
-			} else {
-				deck.cards.RemoveAt (0);
-				//new BurnACardCommand (hand.CardsInHand [0], this, fast).AddToQueue ();
 			}
         }
         else
