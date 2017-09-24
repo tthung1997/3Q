@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class Player : MonoBehaviour, ICharacter
 {
@@ -92,6 +93,28 @@ public class Player : MonoBehaviour, ICharacter
         }
     }*/
 
+    private int role;
+    public int Role
+    {
+        get { return role; }
+        set {
+            role = value;
+            GameObject card;
+            if (role == 0)
+            {
+                card = GameObject.Instantiate(GlobalSettings.Instance.MonarchCardPrefab, new Vector3(-1f, 0f, 0f), Quaternion.Euler(Vector3.zero)) as GameObject;
+            }
+            else
+            {
+                card = GameObject.Instantiate(GlobalSettings.Instance.TurnCoatCardPrefab, new Vector3(1f, 0f, 0f), Quaternion.Euler(Vector3.zero)) as GameObject;
+            }
+            Sequence s = DOTween.Sequence();
+            s.AppendInterval(GlobalSettings.Instance.CardPreviewTime);
+            s.Append(card.transform.DOLocalMove(PArea.RoleSpot.position, GlobalSettings.Instance.CardTransitionTime));
+            s.OnComplete(() => card.transform.SetParent(PArea.RoleSpot.transform));
+        }
+    }
+
     private int health;
     public int Health
     {
@@ -143,8 +166,8 @@ public class Player : MonoBehaviour, ICharacter
         // add one mana crystal to the pool;
         Debug.Log("In ONTURNSTART for "+ gameObject.name);
 		usedStrikeThisTurn = false;
-		// TODO
-		/*ManaThisTurn++;
+        // TODO
+        /*ManaThisTurn++;
         ManaLeft = ManaThisTurn;
         foreach (CreatureLogic cl in table.CreaturesOnTable)
             cl.OnTurnStart();
@@ -343,18 +366,17 @@ public class Player : MonoBehaviour, ICharacter
 
     public void TransmitInfoAboutPlayerToVisual()
     {
-        // TODO PArea.Portrait.gameObject.AddComponent<IDHolder>().UniqueID = PlayerID;
-        /* TODO if (GetComponent<TurnMaker>() is AITurnMaker)
+        //TODO PArea.Portrait.gameObject.AddComponent<IDHolder>().UniqueID = PlayerID;
+        /*if (GetComponent<TurnMaker>() is AITurnMaker)
         {
             // turn off turn making for this character
             PArea.AllowedToControlThisPlayer = false;
         }
-        else
+        else*/
         {
             // allow turn making for this character
             PArea.AllowedToControlThisPlayer = true;
-        }*/
+        }
     }
        
-        
 }
