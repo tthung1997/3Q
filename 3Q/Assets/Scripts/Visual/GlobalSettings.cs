@@ -92,6 +92,8 @@ public class GlobalSettings: MonoBehaviour
         else
         {
             EndTurnButton.interactable = false;
+            LowFlipFaceButton.interactable = false;
+            TopFlipFaceButton.interactable = false;
         }
     }
 }

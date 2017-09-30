@@ -245,7 +245,11 @@ public class HandVisual : MonoBehaviour
         if (owner == AreaPosition.Low)
             w.VisualState = VisualStates.LowHand;
         else
+        {
             w.VisualState = VisualStates.TopHand;
+            if (!TakeCardsOpenly)
+                w.turnOffPreview();
+        }
 
         // set correct sorting order
         w.SetHandSortingOrder();

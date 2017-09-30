@@ -17,7 +17,7 @@ public class WhereIsTheCardOrCreature : MonoBehaviour {
 
     // reference to a HoverPreview Component
     private HoverPreview hover;
-
+    
     // reference to a canvas on this object to set sorting order
     private Canvas canvas;
 
@@ -106,5 +106,9 @@ public class WhereIsTheCardOrCreature : MonoBehaviour {
         return (-(placeInHand + 1) * 10); 
     }
 
+    public void turnOffPreview()
+    {
+        hover.ThisPreviewEnabled = false;
+    }
 
 }
