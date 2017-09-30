@@ -64,7 +64,8 @@ public class WhereIsTheCardOrCreature : MonoBehaviour {
                     hover.ThisPreviewEnabled = false;
                     break;
                 case VisualStates.TopHand:
-                    hover.ThisPreviewEnabled = false;
+                    hover.ThisPreviewEnabled = true;
+                    hover.TargetPosition = -hover.TargetPosition;
                     break;
             }
         }

@@ -17,6 +17,7 @@ public class HeroPortraitVisual : MonoBehaviour {
 	//public Transform HealthTransform;
 	[Header("Image References")]
 	public Image PortraitImage;
+    public GameObject HeroPortraitObject;
 
 	public void Awake()
 	{
@@ -76,6 +77,11 @@ public class HeroPortraitVisual : MonoBehaviour {
 		/**/
 	}
 
+    public void Flip()
+    {
+        Sequence s = DOTween.Sequence();
+        s.Insert(0f, HeroPortraitObject.transform.DORotate(new Vector3(0f, 180f, 0f), GlobalSettings.Instance.CardTransitionTime));
+    }
 
 
 }

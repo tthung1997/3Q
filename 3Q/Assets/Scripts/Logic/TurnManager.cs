@@ -14,7 +14,7 @@ public class TurnManager : MonoBehaviour {
 
     // PRIVATE FIELDS
     // reference to a timer to measure 
-    private RopeTimer timer;
+    // TODO private RopeTimer timer;
 
 
     // PROPERTIES
@@ -30,21 +30,31 @@ public class TurnManager : MonoBehaviour {
         {
 			//Debug.Log ("Start new turn");
             _whoseTurn = value;
-            timer.StartTimer();
+            // TODO timer.StartTimer();
 
             GlobalSettings.Instance.EnableEndTurnButtonOnStart(_whoseTurn);
 
             TurnMaker tm = whoseTurn.GetComponent<TurnMaker>();
             // player`s method OnTurnStart() will be called in tm.OnTurnStart();
             tm.OnTurnStart();
-            if (tm is PlayerTurnMaker)
+            if (_whoseTurn.PArea.HPortrait.HeroPortraitObject.transform.rotation == Quaternion.Euler(Vector3.zero))
             {
-                whoseTurn.HighlightPlayableCards();
+                _whoseTurn.DrawACard();
+                _whoseTurn.DrawACard();
+                if (tm is PlayerTurnMaker)
+                {
+                    whoseTurn.HighlightPlayableCards();
+                }
+                // remove highlights for opponent.
+                whoseTurn.otherPlayer.HighlightPlayableCards(true);
+                //Debug.Log ("Finish starting new turn");
             }
-            // remove highlights for opponent.
-            whoseTurn.otherPlayer.HighlightPlayableCards(true);
-			//Debug.Log ("Finish starting new turn");
-                
+            else
+            {
+                Sequence s = DOTween.Sequence();
+                s.Insert(0f, _whoseTurn.PArea.HPortrait.HeroPortraitObject.transform.DORotate(Vector3.zero, GlobalSettings.Instance.CardTransitionTime));
+                EndTurn();
+            }
         }
     }
 
@@ -53,7 +63,7 @@ public class TurnManager : MonoBehaviour {
     void Awake()
     {
         Instance = this;
-        timer = GetComponent<RopeTimer>();
+        // TODO timer = GetComponent<RopeTimer>();
     }
 
     void Start()
@@ -94,7 +104,7 @@ public class TurnManager : MonoBehaviour {
                 // Debug.Log(whoGoesSecond);
          
                 // draw 4 cards for first player and 5 for second player
-                int initDraw = 4;
+                int initDraw = 3;
                 for (int i = 0; i < initDraw; i++)
                 {            
                     // second player draws a card
@@ -104,6 +114,8 @@ public class TurnManager : MonoBehaviour {
                 }
                 // add one more card to second player`s hand
                 whoGoesSecond.DrawACard(true);
+                whoGoesFirst.Role = 1;
+                whoGoesSecond.Role = 0;
                 //new GivePlayerACoinCommand(null, whoGoesSecond).AddToQueue();
                 //TODO whoGoesSecond.GetACardNotFromDeck(CoinCard);
                 new StartATurnCommand(whoGoesFirst).AddToQueue();
@@ -119,15 +131,15 @@ public class TurnManager : MonoBehaviour {
     // FOR TEST PURPOSES ONLY
     public void EndTurnTest()
     {
-        timer.StopTimer();
-        timer.StartTimer();
+        // TODO timer.StopTimer();
+        // TODO timer.StartTimer();
     }
 
     public void EndTurn()
     {
 		//Debug.Log ("In EndTurn");
         // stop timer
-        timer.StopTimer();
+        // TODO timer.StopTimer();
         // send all commands in the end of current player`s turn
         whoseTurn.OnTurnEnd();
 
@@ -137,7 +149,7 @@ public class TurnManager : MonoBehaviour {
 
     public void StopTheTimer()
     {
-        timer.StopTimer();
+        // TODO timer.StopTimer();
     }
 
 }

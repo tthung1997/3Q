@@ -31,8 +31,12 @@ public class GlobalSettings: MonoBehaviour
 	public GameObject WeaponCardPrefab;
 	public GameObject DefensiveMountCardPrefab;
 	public GameObject OffensiveMountCardPrefab;
+    public GameObject MonarchCardPrefab;
+    public GameObject TurnCoatCardPrefab;
     [Header("Other")]
     public Button EndTurnButton;
+    public Button LowFlipFaceButton;
+    public Button TopFlipFaceButton;
     //public CardAsset CoinCard;
     public GameObject GameOverPanel;
     //public Sprite HeroPowerCrossMark;
@@ -70,12 +74,24 @@ public class GlobalSettings: MonoBehaviour
 
     public void EnableEndTurnButtonOnStart(Player P)
     {
-		
         if (P == LowPlayer && CanControlThisPlayer(AreaPosition.Low) ||
             P == TopPlayer && CanControlThisPlayer(AreaPosition.Top))
+        {
             EndTurnButton.interactable = true;
+            if (P == LowPlayer)
+            {
+                LowFlipFaceButton.interactable = true;
+                TopFlipFaceButton.interactable = false;
+            }
+            else
+            {
+                LowFlipFaceButton.interactable = false;
+                TopFlipFaceButton.interactable = true;
+            }
+        }
         else
+        {
             EndTurnButton.interactable = false;
-         
+        }
     }
 }
