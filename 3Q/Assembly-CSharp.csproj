@@ -86,6 +86,9 @@
      <Compile Include="Assets\Scripts\Logic\TurnManager.cs" />
      <Compile Include="Assets\Scripts\Logic\TurnsAndAI\PlayerTurnMaker.cs" />
      <Compile Include="Assets\Scripts\Logic\TurnsAndAI\TurnMaker.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\opening.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\openTitle.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\rotation.cs" />
      <Compile Include="Assets\Scripts\RaycastExample.cs" />
      <Compile Include="Assets\Scripts\ShufflingExtention.cs" />
      <Compile Include="Assets\Scripts\SO Asset Scripts\BasicCardAsset\BasicCardAsset.cs" />
